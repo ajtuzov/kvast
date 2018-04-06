@@ -141,19 +141,45 @@
         </table>
     </div>
     <div class="order">
-        Заказать
+        <h2>Заказать</h2>
 
-        Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.
+        <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
         
-        Представьтесь:
-        Номер телефона:
-        Доп. номер:
-        Email:
-        Объем заказа:
-        От 5 до 10 баррелей в неделю
-        Доп. комментарий:
-        Я согласен получать квасную рассылку
-        Отправить заказ
+        <form class="order-form">
+            <div class="order-form-group">
+                <label for="introduce-id">Представьтесь:</label>
+                <input type="text" name="introduce" id="introduce-id">
+            </div>
+            <div class="order-form-group">
+                <label for="phone-id">Номер телефона:</label>
+                <input type="text" name="phone" id="phone-id">
+            </div>
+            <div class="order-form-group">
+                <label for="additional-number-id">Доп. номер:</label>
+                <input type="text" name="additional-number" id="additional-number-id">
+            </div>
+            <div class="order-form-group">
+                <label for="email-id">Email:</label>
+               <input type="text" name="email" id="email-id">
+            </div>
+            <div class="order-form-group">
+                <label for="capacity-id">Объем заказа:</label>
+                <select name="capacity" id="capacity-id">
+                    <option>От 5 до 10 баррелей в неделю</option>
+                </select>
+            </div>
+            <div class="order-form-group">
+                <label for="message-id">Доп. комментарий:</label>
+                <textarea name="message" id="message-id" rows="10"></textarea>
+            </div>
+            <div class="checkbox-area">
+                <label>
+                    <input type="checkbox" name="subscription">
+                    Я согласен получать квасную рассылку
+                </label>
+            </div>
+            <input type="submit" class="btn" value="Отправить заказ">
+        </form>
     </div>
     <div class="footer">
         <div class="footer-top">
